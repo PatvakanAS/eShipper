@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px  sans-serif;
+    text-indent: hanging;
+}
+
+.container {
+    max-width: 1913px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 15px;
+}
+
+.container_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.login_content {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+}
+
+.login_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5px;
+}
+
+.id_text {
+    width: 300px;
+    background: #E6E7E8;
+    text-align: center;
+    padding: 10px 2px;
+}
+.id_text p {
+    line-height: 20px;
+}
+
+.login_left h2 {
+    color: #472f92;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.login_left p {
+    color: #787774;
+    font-size: 14px;
+}
+
+
+.login_left a {
+    width: 150px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+    background: #472F92;
+    border-radius: 100px;
+    margin: 20px auto;
+}
+
+.id_icons_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.id_icons_block {
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    background: #D8ECEE;
+}
+
+.id_icons_block h5 {
+    font-size: 13px;
+    color: #6A62A5;
+    margin-bottom: 10px;
+}
+
+.id_icons_block img {
+    width: 80px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+.id_icons_block h4 {
+    font-size: 30px;
+    color: black;
+}
+
+.id_icons_block p {
+    font-size: 13px;
+    color: #E48797;
+}
+
+.id_icons_block p span {
+    font-size: 13px;
+    color: black;
+    text-decoration: line-through;
+}
+
+.forget { text-align: center; }
+
+.login_right {
+    flex: 1;
+    background: url("../img/form1.png") no-repeat;
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 10px 20px;
+}
+
+.footer_block1 {
+    height: 150px;
+    margin: 20px;
+}
+
+.footer_block1 h3 {
+    color: #29A3AD;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.footer_block1 p {
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.footer_block1 img {
+    width: 25px;
+    margin-left: 1px;
+}
+
+.footer_block1_img {
+    margin: 20px;
+    padding: 20px  0;
+}
+
+.footer_block1_img img {
+    width: 150px;
+    height: 100px;
+}
+
+.footer_fixed {
+    padding: 5px 8px;
+    border-radius:  10px 10px 0 0;
+    background-color: #2FB5C0;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    display: none;
+}
+
+.footer_fixed p {
+    color: white;
+    text-align: left;
+    font-size: 28px;
+    margin-right: 5px;
+    line-height: 10px;
+    padding: 0 5px;
+}
+
+.footer_fixed img {
+    width: 16px;
+    margin-left: 10px;
+}
+
+.mob_search {
+    background: url("../img/search_img.png") no-repeat;
+    background-position: 5px 7px;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 5px 10px;
+    border-radius: 100px;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+    outline: none;
+    margin-top: 5px;
+}
+
+.show { display: none;}
+
+.show {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.show a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+    display: block;
+    padding: 5px 10px;
+}
+
+.show a:hover {
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    box-sizing: border-box;
+    color: #2FB5C0;
+}
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+.hamburger img {
+    width: 100%;
+    height: 50px;
+}
+
+.login_mob { display: none; }
+.logo_img_mob { display: none; }
+
+.mob_order { display: none; }
+
+@media (max-width: 1280px) {
+    .signin_up { display: none; }
+    #hide { display: none; }
+    .join { display: none; }
+    #show { display: none; }
+
+    .show_menu {
+        display: block;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media (max-width: 600px){
+    .landing_block { padding: 70px 0 0 0; }
+    .support { display: none; }
+    .landing_block p { font-size: 15px; }
+    .img_signin {
+        width: 150px;
+    }
+    header { justify-content: center; }
+    .footer_block1_img  { display: none; }
+    .login_content { flex-direction: column; }
+    .login_right { height: 300px; }
+    .footer_hide { display: none; }
+}
+
+@media (max-width: 500px){
+    .id_icons_block img {
+        width: 60px;
+        height: 40px;
+        margin: 10px auto;
+    }
+
+    .id_icons_block h4 { font-size: 20px; }
+    .id_icons_block p { font-size: 12px; }
+    .id_icons_block p span { font-size: 12px; }
+}
+
+@media (max-width: 426px) {
+    header { display: none; }
+    .footer_block1 { margin: 5px }
+    footer { padding-bottom: 25px; }
+    .logo_div { display: none; }
+    .head { background-color: white; }
+    .login_mob { display: block; font-size: 24px; text-decoration: none; color: black;}
+    .logo_img_mob { display: block; }
+    .landing_block { padding: 48px 0 0 0; visibility: hidden;}
+    .mob_order {
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mob_order img {
+        width: 25px;
+        height: 30px;
+        display: block;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+
+    .mob1{ background-color: #A1D3DB; width: 33.3%; height: 100px; font-size: 12px; color: white; text-align: center; }
+    .mob2{ background-color: #2FB5C0; width: 33.3%; height: 100px; font-size: 12px; color: white; text-align: center; }
+    section { text-align: center; }
+    section h2 { font-size: 25px; }
+    section h3 { font-size: 18px; }
+    section a { width: 150px; }
+    section p { font-size: 13px; }
+    .login_left a { width: 140px; }
+}
